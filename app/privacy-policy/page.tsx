@@ -102,7 +102,7 @@ export default function PrivacyPolicy() {
               <li>Pages visited</li>
               <li>Date and time of visits</li>
               <li>Referring website</li>
-              <li>Website usage and interaction information</li>
+              <li>Website usage and interaction information </li>
             </ul>
           </div>
 

@@ -87,7 +87,7 @@ export default function AppointmentPage() {
         })
         try {
           await emailjs.send(process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || "", process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID2 || "", {
-            to_email: "js9815286568@gmail.com", to_name: "Admin", from_name: formData.fullName,
+            to_email: "shwvetajha@gmail.com", to_name: "Admin", from_name: formData.fullName,
             subject: `New Appointment Booking: ${formData.fullName}`, full_name: formData.fullName,
             email: formData.email, phone: formData.phone, birth_date: formData.birthDate,
             service: formData.service, consultation_date: consultationDate, consultation_time: formData.time,

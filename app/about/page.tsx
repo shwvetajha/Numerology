@@ -50,7 +50,7 @@ export default function AboutPage() {
                 <div className="relative">
                   <div className="absolute -inset-3 bg-gradient-to-br from-[#b48c3c]/10 to-[#d4a843]/5 rounded-2xl blur-2xl" />
                   <div className="relative aspect-[4/5] rounded-xl bg-[#e8e4dc] overflow-hidden shadow-xl">
-                    <img src="/placeholder.svg?key=about01" alt="Numerologist" className="w-full h-full object-cover" />
+                    <img src="about.jpeg" alt="Numerologist" className="w-full h-full object-cover" />
                   </div>
                   <div className="absolute -bottom-4 -left-4 w-20 h-20 bg-gradient-to-br from-[#b48c3c] to-[#8a6b25] rounded-xl flex items-center justify-center shadow-lg animate-float">
                     <Sparkles size={28} className="text-white" />

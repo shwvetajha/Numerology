@@ -3,14 +3,14 @@ import { createClient } from "@supabase/supabase-js"
 export async function GET() {
   try {
     const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL
-    const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
+    const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY
 
-    if (!supabaseUrl || !supabaseAnonKey) {
+    if (!supabaseUrl || !supabaseServiceKey) {
       console.error("[v0] Missing Supabase environment variables")
       return Response.json({ error: "Database configuration missing" }, { status: 500 })
     }
 
-    const supabase = createClient(supabaseUrl, supabaseAnonKey)
+    const supabase = createClient(supabaseUrl, supabaseServiceKey)
     const { data, error } = await supabase.from("articles").select("*").order("created_at", { ascending: false })
 
     if (error) {
@@ -21,7 +21,7 @@ export async function GET() {
     console.log("[v0] Fetched articles:", data?.length)
     return Response.json(data || [])
   } catch (error) {
-    console.error("[v0] Error fetching articles:", error)
+    console.error("Error fetching articles:", error)
     return Response.json({ error: "Failed to fetch articles" }, { status: 500 })
   }
 }

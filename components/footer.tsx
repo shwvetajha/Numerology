@@ -59,8 +59,8 @@ export function Footer() {
             <div className="flex gap-3 mb-6">
               {[
                 { href: "https://instagram.com", icon: Instagram, label: "Instagram" },
-                { href: "https://wa.me/1234567890", icon: MessageCircle, label: "WhatsApp" },
-                { href: "mailto:hello@numerology.com", icon: Mail, label: "Email" },
+                { href: "https://wa.me/+91 9560509414", icon: MessageCircle, label: "WhatsApp" },
+                { href: "mailto:shwvetajha@gmail.com", icon: Mail, label: "Email" },
               ].map((s, i) => (
                 <a key={i} href={s.href} target={s.href.startsWith("http") ? "_blank" : undefined}
                   rel={s.href.startsWith("http") ? "noopener noreferrer" : undefined} aria-label={s.label}
@@ -80,7 +80,7 @@ export function Footer() {
           <p>&copy; {currentYear} Numerology Consultations. All rights reserved.</p>
           <div className="flex gap-6 mt-4 md:mt-0">
             <Link href="/privacy-policy" className="hover:text-white/50 transition-colors">Privacy Policy</Link>
-            <Link href="#" className="hover:text-white/50 transition-colors">Terms of Service</Link>
+            {/* <Link href="#" className="hover:text-white/50 transition-colors">Terms of Service</Link> */}
           </div>
         </div>
       </div>

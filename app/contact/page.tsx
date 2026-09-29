@@ -119,8 +119,8 @@ export default function ContactPage() {
                   <div className="space-y-4">
                     {[
                       { href: "https://instagram.com", icon: Instagram, label: "Instagram" },
-                      { href: "https://wa.me/1234567890", icon: MessageCircle, label: "WhatsApp" },
-                      { href: "mailto:hello@numerology.com", icon: Mail, label: "Email" },
+                      { href: "https://wa.me/+91 9560509414", icon: MessageCircle, label: "WhatsApp" },
+                      { href: "mailto:shwvetajha@gmail.com", icon: Mail, label: "Email" },
                     ].map((s, i) => (
                       <a key={i} href={s.href} target={s.href.startsWith("http") ? "_blank" : undefined} rel={s.href.startsWith("http") ? "noopener noreferrer" : undefined}
                         className="flex items-center gap-3 text-[#999] hover:text-[#b48c3c] transition-colors text-sm group">

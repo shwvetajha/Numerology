@@ -67,8 +67,8 @@ export default function ContactPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid md:grid-cols-3 gap-5">
               {[
-                { icon: Mail, title: "Email", value: "hello@numerology.com", href: "mailto:hello@numerology.com" },
-                { icon: Phone, title: "Phone", value: "+1 (555) 123-4567", href: "tel:+1(555)123-4567" },
+                { icon: Mail, title: "Email", value: "shwvetajha@gmail.com", href: "mailto:shwvetajha@gmail.com" },
+                { icon: Phone, title: "Phone", value: "+91 9560509414", href: "tel:+919560509414" },
                 { icon: MapPin, title: "Location", value: "In-person & Online", href: null },
               ].map((item, i) => (
                 <div key={i} className={`reveal delay-${i + 1} group bg-[#faf8f4] rounded-xl p-8 text-center border border-[#f0ece4] card-premium`}>
